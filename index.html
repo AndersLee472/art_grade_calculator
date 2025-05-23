@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -39,6 +38,12 @@
         .result-box {
             background-color: #f0f4ff;
             border-left: 4px solid #667eea;
+        }
+        /* 注释样式 */
+        .note {
+            font-size: 0.875rem; /* 设置字体大小为14px */
+            color: #6b7280; /* 设置颜色为灰色 */
+            margin-top: 0.5rem; /* 设置顶部间距 */
         }
         /* 广告滚动样式 */
         .advertisement {
@@ -86,10 +91,11 @@
                     请选择已知的两个分数种类
                 </label>
                 <select id="scoreType" class="w-full bg-gray-50 border border-gray-300 p-3 rounded-lg focus:outline-none">
-                    <option value="specialty-target">专业分数与目标学校分数</option>
                     <option value="specialty-culture">专业分数和文化分数</option>
+                    <option value="specialty-target">专业分数与目标学校分数</option>
                     <option value="culture-target">文化分数和目标学校分数</option>
                 </select>
+                <p class="note">注：目标学校分数为目标学校的合成分分数线，比如说去年南海艺高美术最低分数线大概是574分。</p>
             </div>
 
             <div class="mb-6 grid grid-cols-2 gap-4">
